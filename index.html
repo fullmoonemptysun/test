@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Grader</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="title">iGrader</h1>
+        <form>
+            <div class="form-group">
+                <label for="file">Upload Document</label>
+                <input type="file" id="file" name="file" required>
+            </div>
+            <div class="form-group">
+                <label for="rubric1">Full Score</label>
+                <input type="number" min="1" id="rubric1" name="rubrics[]" placeholder="Full Score" required>
+            </div>
+            <div class="form-group">
+                <label for="rubric2">Rubric 1</label>
+                <input type="text" id="rubric2" name="rubrics[]" placeholder="Rubric 2" required>
+            </div>
+            <div class="form-group">
+                <label for="rubric3">Rubric 2</label>
+                <input type="text" id="rubric3" name="rubrics[]" placeholder="Rubric 3" required>
+            </div>
+            <div class="form-group">
+                <label for="rubric4">Rubric 3</label>
+                <input type="text" id="rubric4" name="rubrics[]" placeholder="Rubric 4" required>
+            </div>
+            <div class="form-group">
+                <label for="rubric5">Rubric 4</label>
+                <input type="text" id="rubric5" name="rubrics[]" placeholder="Rubric 5" required>
+            </div>
+            <button type="submit">Grade Document</button>
+        </form>
+        <footer class="footer">Designed by <a href="https://github.com/fullmoonemptysun">fullmoonemptysun<a></footer>
+    </div>
+</body>
+
+</html>
